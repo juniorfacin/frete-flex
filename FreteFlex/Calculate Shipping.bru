@@ -1,0 +1,17 @@
+meta {
+  name: Calculate Shipping
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/shipping/calculate?type=express&distance=100&weight=100
+  body: none
+  auth: none
+}
+
+params:query {
+  type: express
+  distance: 100
+  weight: 100
+}
